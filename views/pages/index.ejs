@@ -20,6 +20,15 @@
         </div>
     </main>
 
+    <h2>Echoing a simple variable</h2>
+    <h4 class="tagline"><%= tagline %></h4>
+    <h4><%= exclamation %></h4>
+
+    <h2>Looping through array of objects supplied from server</h2>
+    <ul><% drinks.forEach(function(drink) { %>
+        <li><h4><%= drink.name %> -> <%= drink.drunkness %></h4></li>
+    <% }); %></ul>
+
     <footer>
     <!-- linking to partials/footer. relative path -->
         <% include ../partials/footer %>
